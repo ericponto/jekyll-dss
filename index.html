@@ -12,19 +12,5 @@ layout: default
 <h1>Components</h1>
 
 {% for block in site.data.styles.blocks %}
-	<div class="jdss-component" id="{{ block.name | replace: ' ', '-' }}">
-		<h2 class="jdss-component-name">{{ block.name }}</h2>
-		<p class="jdss-component-description">{{ block.description }}</p>
-		
-		<h3>Example</h3>
-		<div class="jdss-component-example">{{ block.markup.example }}</div>
-
-		<h3>Markup</h3>
-		<div class="jdss-component-markup">
-			{% highlight html %}
-				{{ block.markup.example }}
-			{% endhighlight %}
-		</div>
-
-	</div>
+	{% include component.html block=block %}
 {% endfor %}
