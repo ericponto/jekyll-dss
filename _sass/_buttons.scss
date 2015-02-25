@@ -1,0 +1,24 @@
+/**
+	* @name Buttons
+	* @description This is an example of a button
+	* @markup
+	* <button class="button">Button</button>
+*/
+.button {
+	display: inline-block;
+	padding: 0.5em 1em;
+	background: #099;
+	color: #fff;
+	border: none;
+	border-radius: 0.25em;
+	cursor: pointer;
+	
+	&:focus,
+	&:hover {
+		background: #1aa;
+	}
+	
+	&:active {
+		background: #088;
+	}
+}

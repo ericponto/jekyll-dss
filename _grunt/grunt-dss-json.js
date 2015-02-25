@@ -19,9 +19,15 @@ module.exports = function(grunt) {
 			}).map(function(filepath) {
 				// Read and return the file's source.
 				return grunt.file.read(filepath);
-			}).join('\n');
+			}).join("\n");
 			
 			dss.parse(contents, {}, function(parsed) {
+				// strip the first white space character that just is there after the *
+				parsed.blocks.forEach(function(block) {
+					block.markup.example = block.markup.example.split("\n").map(function(text) {
+						return text.replace(/^\s/, "");
+					}).join("\n");
+				});
 				grunt.file.write(file.dest, JSON.stringify(parsed, null, "\t"));
 				grunt.log.writeln('File "' + file.dest + '" created.');
 			});
