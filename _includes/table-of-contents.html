@@ -1,0 +1,9 @@
+<h2>Table of Contents</h2>
+
+<nav class="jdss-toc">
+	<ul>
+	{% for block in site.data.styles.blocks %}
+		<li><a href="#{{ block.name | replace: ' ', '-' }}">{{ block.name }}</a></li>
+	{% endfor %}
+	</ul>
+</nav>

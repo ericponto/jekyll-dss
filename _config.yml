@@ -1,0 +1,9 @@
+# Site settings
+title: Jekyll-DSS
+email: eric.ponto@gmail.com
+description: Auto-generate style documentation from your CSS using Jekyll and DSS
+
+# Build settings
+markdown: kramdown
+
+exclude: [node_modules, package.json]

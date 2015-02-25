@@ -1,0 +1,12 @@
+{
+	"blocks": [
+		{
+			"name": "Headers",
+			"description": "This is an example of header h1-h6.",
+			"markup": {
+				"example": " \t<h1>h1. Jekyll-DSS</h1>\n <h2>h2. Auto-generate your styleguide</h2>\n <h3>Header 3</h3>\n <h4>Header 4</h4>\n <h5>Header 5</h5>\n <h6>Header 6</h6>",
+				"escaped": " \t&lt;h1&gt;h1. Jekyll-DSS&lt;/h1&gt;\n &lt;h2&gt;h2. Auto-generate your styleguide&lt;/h2&gt;\n &lt;h3&gt;Header 3&lt;/h3&gt;\n &lt;h4&gt;Header 4&lt;/h4&gt;\n &lt;h5&gt;Header 5&lt;/h5&gt;\n &lt;h6&gt;Header 6&lt;/h6&gt;"
+			}
+		}
+	]
+}

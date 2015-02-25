@@ -1,0 +1,23 @@
+{
+  "name": "Jekyll-DSS",
+  "version": "1.0.0",
+  "description": "Auto-generate style documentation from your CSS",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericponto/jekyll-dss.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericponto/jekyll-dss/issues"
+  },
+  "homepage": "https://github.com/ericponto/jekyll-dss",
+  "devDependencies": {
+    "dss": "^1.0.4",
+    "grunt": "^0.4.5"
+  }
+}
