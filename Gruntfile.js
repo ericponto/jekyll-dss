@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 
 	grunt.initConfig({
-		dss: {
+		dss2json: {
 			build: {
 				files: {
 					"_data/styles.json": "_sass/**.*"
@@ -9,8 +9,8 @@ module.exports = function(grunt) {
 			}
 		}
 	});
+
+	grunt.loadNpmTasks("grunt-dss2json");
 	
-	grunt.loadTasks("_grunt");
-	
-	grunt.registerTask("default", ["dss"]);
+	grunt.registerTask("default", ["dss2json"]);
 }

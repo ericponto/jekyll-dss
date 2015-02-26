@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ericponto/jekyll-dss",
   "devDependencies": {
     "dss": "^1.0.4",
-    "grunt": "^0.4.5"
+    "grunt": "^0.4.5",
+    "grunt-dss2json": "^0.1.0"
   }
 }
